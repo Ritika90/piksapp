@@ -1,0 +1,187 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+.navbar {
+  background-color: #88baf1;
+  border-color: #88baf1;
+  padding-top: 6px;
+}
+.cont {
+  float: right;
+}
+/* header */
+
+#logo {
+  float: left;
+  margin-right: 10px;
+  font-size: 1.7em;
+  color: #010202;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  padding-top: 14px;
+  font-weight: bold;
+}
+
+#logo:hover {
+  color: #fff;
+  text-decoration: none;
+}
+/* universal */
+
+html {
+  overflow-y: scroll;
+}
+th {
+  font-size: 1.5em;
+  padding-top: 26px;
+}
+td {
+  padding-top: 10px;
+//  font-weight: bold;
+  text-transform: uppercase;
+}
+body {
+  padding-top: 60px;
+}
+
+/* footer */
+
+footer {
+  margin-top: 45px;
+  padding-top: 5px;
+  border-top: 1px solid #eaeaea;
+  color: #777;
+}
+
+footer a {
+  color: #555;
+}
+
+footer a:hover {
+  color: #222;
+}
+
+footer small {
+  float: left;
+}
+
+footer ul {
+  float: right;
+  list-style: none;
+}
+
+footer ul li {
+  float: left;
+  margin-left: 15px;
+}
+
+.btn-small {
+  @include button-variant(black, #ffd8e9, #ffd8e9);
+}
+
+.btn-success {
+  margin-top: 10px;
+}
+
+.carousel{
+  margin-top: 20px;
+}
+
+.active {
+  margin-left: 450px;
+}
+
+.item {
+  margin-left: 450px;
+}
+.glyphicon {
+  color: #ffd8e9;
+  font-size: 2.5em;
+  position: absolute;
+  top: 50%;
+}
+
+.glyphicon-chevron-left {
+  margin-left: 347px;
+}
+.glyphicon-chevron-right {
+  margin-left: 700px;
+}
+
+#cd {
+  margin-top: 10px;
+  margin-left: -140px;
+}
+
+/* universal */
+
+html {
+  overflow-y: scroll;
+}
+
+body {
+  padding-top: 60px;
+}
+
+section {
+  overflow: auto;
+}
+
+textarea {
+  resize: vertical;
+}
+
+.center {
+  text-align: center;
+}
+
+.center h1 {
+  margin-bottom: 10px;
+}
+
+.hero-unit {
+  padding: 60px;
+  margin-bottom: 30px;
+  font-size: 18px;
+  font-weight: 200;
+  background-color: #faecf3;
+}
+/* typography */
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1;
+}
+
+h1 {
+  font-size: 3em;
+  letter-spacing: -2px;
+  margin-bottom: 30px;
+}
+
+h3 {
+  font-size: 1.2em;
+  letter-spacing: -1px;
+  margin-bottom: 30px;
+  text-align: center;
+  font-weight: normal;
+  color: #999;
+}
+p {
+  font-size: 1.1em;
+  line-height: 1.7em;
+}
+
+#fd {
+  font-weight: bold;
+  font-size: 1.5em;
+}
+h5 {
+  font-size: 3em;
+  letter-spacing: -2px;
+  margin-top: 30px;
+  text-align: center;
+}
+
+.btn-large {
+  background-color: #b3eeee;
+}

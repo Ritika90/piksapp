@@ -1,0 +1,19 @@
+<table>
+  <thead>
+    <tr>
+      <th>Album's Name</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @albums.each do |album| %>
+      <tr>
+        <td><b><%= link_to album.name, album %></b> <small><i>&NonBreakingSpace;<=Click to view the images</i></small></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= button_to 'New Album', new_album_path, :method => :get, class: "btn btn-small" %>

@@ -1,0 +1,24 @@
+<% if signed_in? %>
+    <div class="row">
+      <aside class="span4">
+        <section>
+         <div class="center hero-unit">
+            <h5>Have a look User</h5>
+            <h3>
+              <i>You can create new albums or view your already created albums and the contained images in it .</i>
+            </h3>
+          </div>
+          <%= link_to "Albums", albums_path, id: "fd" %> <i><small><= Click to view your Albums</small></i>
+        </section>
+      </aside>
+    </div>
+<% else %>
+<div class="center hero-unit">
+  <h1>Welcome to the PiksApp</h1>
+    <h3>
+      <i>Hey there, lets take a look and enjoy this application <br>
+        by organizing your images.</i>
+    </h3>
+    <%= link_to "Sign up now!", new_user_registration_path, class: "btn btn-large" %>
+</div>
+<% end %>

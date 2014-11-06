@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourceManagerImpl" format="xml" hash="3423753668">
+    <data-source source="LOCAL" name="development" uuid="4df5049a-cc9f-450d-896f-137834e75f04">
+      <driver-ref>sqlite.xerial</driver-ref>
+      <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
+      <jdbc-url>jdbc:sqlite:$PROJECT_DIR$/db/development.sqlite3</jdbc-url>
+      <libraries />
+    </data-source>
+    <data-source source="LOCAL" name="Rails piksapp: development" uuid="74277a3e-35de-41ac-9697-855340793df0">
+      <driver-ref>sqlite.xerial</driver-ref>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql:album_db</jdbc-url>
+      <libraries />
+    </data-source>
+    <data-source source="LOCAL" name="Rails piksapp: test" uuid="bd70605d-5bc5-4ee6-a148-07b34766bd9c">
+      <driver-ref>sqlite.xerial</driver-ref>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql:album_db</jdbc-url>
+      <libraries />
+    </data-source>
+    <data-source source="LOCAL" name="Rails piksapp: production" uuid="3261d0fd-c7b4-4a64-8914-2ad200e8b8fb">
+      <driver-ref>postgresql</driver-ref>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql:album_db</jdbc-url>
+      <libraries />
+    </data-source>
+  </component>
+</project>
+

@@ -1,0 +1,33 @@
+<h1>Images</h1>
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+<table>
+  <tbody>
+  <div class="carousel slide" id="myCarousel">
+    <div class="carousel-inner">
+      <div class="active item">
+        <%= link_to image_tag("1.jpg", size: "200x200") %>
+      </div>
+        <% @album.images.each do |image| %>
+          <div class="item">
+            <%= link_to (image_tag (image.picture.url(:thumb))), [image.album, image] %>
+          </div>
+        <% end %>
+      </div>
+    <span class="glyphicon glyphicon-chevron-left" href="#myCarousel" data-slide="prev">
+      </span>
+   <span class="glyphicon glyphicon-chevron-right" href="#myCarousel" data-slide="next">
+      </span>
+
+  </div>
+    <td><%= button_to 'New Image', new_album_image_path, :method => :get, class: "btn btn-primary" %></td>
+    <td></td>  <td></td>  <td></td>  <td></td>  <td></td>  <td></td>  <td></td>  <td></td>  <td></td>
+    <td></td>  <td></td>  <td></td>  <td></td>  <td></td>  <td></td>  <td></td>  <td></td>  <td></td>
+    <td><%= button_to 'Back',  new_album_image_path, :method => :get, class: "btn btn-small" %></td>
+
+  </tbody>
+</table>
+
+<br>
+
+
+

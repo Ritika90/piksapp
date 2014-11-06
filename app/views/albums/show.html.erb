@@ -1,0 +1,16 @@
+<table>
+  <tr>
+    <td>Album Name: <%= @album.name %>&NonBreakingSpace; &NonBreakingSpace;
+      <%= link_to 'Edit', edit_album_path(@album) %> |
+       <%= link_to 'Destroy', @album, method: :delete, data: { confirm: 'Are you sure?' } %>
+    </td>
+  </tr>
+  <tr>
+    <td><%= button_to 'Images in the album', album_images_path(@album), :method => :get, class: "btn btn-success" %></td>
+    <td><%= button_to 'Back', albums_path, :method => :get, class: "btn btn-primary", id: "cd" %></td>
+  </tr>
+</table>
+
+
+
+
